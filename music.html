@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="MIDNIGHT LITANYをブラウザで再生できます。" />
+    <meta property="og:title" content="MIDNIGHT LITANY | 39ra Garden" />
+    <meta property="og:description" content="Sunoで制作したAI generated track." />
+    <meta property="og:type" content="music.song" />
+    <meta property="og:image" content="./assets/39ra-garden-logo-transparent.png" />
+    <title>MIDNIGHT LITANY | 39ra Garden</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="./index.html">
+        <img src="./assets/39ra-garden-logo-transparent.png" alt="" />
+        <span>39ra Garden</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./announcements.html">News</a>
+        <a href="./music.html" aria-current="page">Music</a>
+        <a href="./artists.html">Artists</a>
+        <a href="./profile.html">Profile</a>
+      </nav>
+      <img class="header-chibi" src="./assets/39ra-chibi.png" alt="" />
+    </header>
+
+    <main class="page-shell music-shell">
+      <section class="music-intro" aria-labelledby="music-heading">
+        <p class="eyebrow">Music Garden</p>
+        <h1 id="music-heading">Songs by AI Artists</h1>
+        <p>
+          39raが所有する楽曲を、歌唱AIアーティストごとに整理しています。
+          アーティスト未設定の曲はOtherにまとめます。
+        </p>
+        <div id="artistFilters" class="artist-filters" aria-label="Artist filters"></div>
+      </section>
+
+      <section class="player-view" aria-label="Music player">
+        <div class="art-panel">
+          <div id="coverArt" class="cover-art" aria-label="Cover art">
+            <div class="moon"></div>
+            <div class="signal signal-a"></div>
+            <div class="signal signal-b"></div>
+            <div class="signal signal-c"></div>
+          </div>
+        </div>
+
+        <div class="track-panel">
+          <p class="eyebrow">Suno archive 001</p>
+          <h1 id="trackTitle">MIDNIGHT LITANY</h1>
+          <p id="trackDescription" class="description">
+            深夜の祈りのように、静かな熱を帯びて進むAI generated track.
+          </p>
+
+          <audio
+            id="audio"
+            controls
+            preload="metadata"
+            src="https://xpeflbtwebjazxohtfrm.supabase.co/storage/v1/object/public/suno/MIDNIGHT%20LITANY.mp3"
+          ></audio>
+
+          <div class="actions" aria-label="Track actions">
+            <button id="likeButton" class="icon-button" type="button" aria-pressed="false">
+              <span aria-hidden="true">♡</span>
+              <span>Like</span>
+            </button>
+            <a
+              id="sunoLink"
+              class="icon-button secondary"
+              href="https://xpeflbtwebjazxohtfrm.supabase.co/storage/v1/object/public/suno/MIDNIGHT%20LITANY.mp3"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span aria-hidden="true">↗</span>
+              <span>Open on Suno</span>
+            </a>
+          </div>
+
+          <dl class="stats" aria-label="Playback stats">
+            <div>
+              <dt>Plays</dt>
+              <dd id="playCount">0</dd>
+            </div>
+            <div>
+              <dt>Likes</dt>
+              <dd id="likeCount">0</dd>
+            </div>
+            <div>
+              <dt>Length</dt>
+              <dd>4:01</dd>
+            </div>
+          </dl>
+
+          <section id="lyricsSection" class="lyrics-section" hidden>
+            <h2>Lyrics</h2>
+            <p id="lyricsText"></p>
+          </section>
+        </div>
+      </section>
+
+      <section class="song-browser" aria-labelledby="song-browser-heading">
+        <h2 id="song-browser-heading">Song List</h2>
+        <div id="songList" class="song-list"></div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
