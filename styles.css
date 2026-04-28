@@ -620,8 +620,24 @@ h2,
     #1b0d18;
 }
 
-.artist-card.dark-card small {
+.artist-card.dark-card small,
+.artist-card.blue-card small,
+.artist-card.shrine-card small {
   color: rgba(255, 233, 242, 0.78);
+}
+
+.artist-card.blue-card {
+  color: #f4f8ff;
+  background:
+    linear-gradient(135deg, rgba(7, 13, 27, 0.88), rgba(13, 37, 75, 0.72)),
+    #070d1b;
+}
+
+.artist-card.shrine-card {
+  color: #fffaf2;
+  background:
+    linear-gradient(135deg, rgba(87, 51, 89, 0.78), rgba(184, 134, 72, 0.62)),
+    #4b2f4d;
 }
 
 .artist-card span,
@@ -680,11 +696,30 @@ h2,
 }
 
 .artist-detail.oboro-theme,
-.artist-detail.yoi-theme {
+.artist-detail.yoi-theme,
+.artist-detail.ruka-theme {
   color: #fff4f9;
   background:
     linear-gradient(135deg, rgba(20, 8, 18, 0.86), rgba(97, 24, 69, 0.72)),
     #160a14;
+}
+
+.artist-detail.ruka-theme {
+  color: #f4f8ff;
+  background:
+    linear-gradient(135deg, rgba(5, 9, 19, 0.9), rgba(10, 33, 70, 0.76)),
+    #050913;
+}
+
+.artist-detail.yomi-theme {
+  color: #fffaf2;
+  background:
+    linear-gradient(135deg, rgba(82, 50, 88, 0.82), rgba(191, 137, 72, 0.64)),
+    #4b2f4d;
+}
+
+.artist-detail.yomi-theme .artist-detail-copy p:not(.eyebrow) {
+  color: rgba(255, 250, 242, 0.86);
 }
 
 .artist-main-visual {

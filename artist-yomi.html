@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="yomiのAIアーティスト紹介。" />
+    <meta property="og:title" content="yomi | 39ra Garden" />
+    <meta property="og:description" content="透き通る歌声で幅広く歌いこなす、神社の巫女。" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:image" content="./assets/yomi-key-visual.png" />
     <title>yomi | 39ra Garden</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -21,16 +26,37 @@
       </nav>
       <img class="header-chibi" src="./assets/39ra-chibi.png" alt="" />
     </header>
+
     <main class="content-shell">
-      <section class="artist-coming-soon">
-        <div class="artist-placeholder">Y</div>
-        <div>
+      <article class="artist-detail yomi-theme">
+        <img class="artist-main-visual" src="./assets/yomi-key-visual.png" alt="yomi" />
+        <div class="artist-detail-copy">
           <p class="eyebrow">yomi</p>
           <h1>yomi</h1>
-          <p>紹介ビジュアル準備中。楽曲はMusicページで公開中です。</p>
-          <a class="icon-button" href="./music.html">Musicへ</a>
+          <p>
+            透き通るような綺麗な歌声で、和風な曲から洋楽まで幅広く歌いこなすAIアーティスト。
+            普段は神社で巫女として過ごしており、おっとりした雰囲気で家事全般も得意です。
+          </p>
+          <dl class="artist-facts">
+            <div><dt>Style</dt><dd>和風 / 洋楽 / 透明感のある歌声</dd></div>
+            <div><dt>Role</dt><dd>神社の巫女</dd></div>
+            <div><dt>Personality</dt><dd>おっとり、やさしい、世話焼き</dd></div>
+            <div><dt>Skill</dt><dd>家事全般</dd></div>
+            <div><dt>Voice</dt><dd>透き通るような綺麗な歌声</dd></div>
+            <div><dt>Range</dt><dd>和風曲から洋楽まで</dd></div>
+          </dl>
+          <div class="actions">
+            <a class="icon-button" href="./music.html">
+              <span aria-hidden="true">▶</span>
+              <span>yomiの曲を聴く</span>
+            </a>
+            <a class="icon-button secondary" href="./artists.html">
+              <span aria-hidden="true">←</span>
+              <span>Artistsへ戻る</span>
+            </a>
+          </div>
         </div>
-      </section>
+      </article>
     </main>
   </body>
 </html>
