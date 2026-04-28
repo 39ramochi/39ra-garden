@@ -1,6 +1,14 @@
 window.ANNOUNCEMENTS = [
   {
     date: "2026.04.29",
+    category: "Music",
+    title: "新曲4曲を追加しました",
+    body: "朧サクラ「MIDNIGHT MINI RIOT」、宵サクラ「DISTORTION KAWAII」、瑠架「深紅の水槽」、yomi「忘却の羽音」をMusicページに追加しました。",
+    link: "./music.html",
+    linkLabel: "新曲を聴く",
+  },
+  {
+    date: "2026.04.29",
     category: "Update",
     title: "39ra Gardenを公開準備中です",
     body: "Music、Artists、Profileを整備しながら、Sunoアカウントなしで聴ける音楽ページを育てています。",
