@@ -24,6 +24,11 @@ const sunoLink = document.querySelector("#sunoLink");
 const trackDescription = document.querySelector("#trackDescription");
 const trackTitle = document.querySelector("#trackTitle");
 
+audio.setAttribute("controlsList", "nodownload");
+audio.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
+
 const canUseSupabase =
   window.supabase && !SUPABASE_ANON_KEY.includes("PASTE_YOUR_ANON_PUBLIC_KEY_HERE");
 const db = canUseSupabase
