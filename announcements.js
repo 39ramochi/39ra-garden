@@ -1,5 +1,13 @@
 window.ANNOUNCEMENTS = [
   {
+    date: "2026.04.30",
+    category: "Music",
+    title: "Otherに新曲3曲を追加しました",
+    body: "「BREAK THE SILENCE」「I am Me, and Me」「Vox Fracta」をMusicページのOtherカテゴリに追加しました。",
+    link: "./music.html",
+    linkLabel: "Otherの曲を聴く",
+  },
+  {
     date: "2026.04.29",
     category: "Music",
     title: "新曲4曲を追加しました",
