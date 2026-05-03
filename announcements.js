@@ -1,5 +1,13 @@
 window.ANNOUNCEMENTS = [
   {
+    date: "2026.05.03",
+    category: "Music",
+    title: "新曲4曲を追加しました",
+    body: "宵サクラ「TAKE OVER」、yomi「薄紅の誓い」、Other「Break Your Limit」「Midnight Distance」をMusicページに追加しました。",
+    link: "./music.html",
+    linkLabel: "新曲を聴く",
+  },
+  {
     date: "2026.04.30",
     category: "Music",
     title: "Otherに新曲3曲を追加しました",
